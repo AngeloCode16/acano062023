@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Brush Version 1</title>
+    <style>
+:root{
+--default-canvas-color:#662f2f;
+--default-brush-color:#000000;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+#canvas{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 1rem;
+}
+#menu{
+background-color: silver;
+border: 2px solid #333;
+height: 60px;
+position: fixed;
+width: 100%;
+padding: 1rem;
+bottom: 0;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <canvas id="canvas">
+    
+    </canvas>
+
+<section id="menu">
+<input type="color" id="colorpicker" value="#000000">
+
+</section>
+
+
+
+
+
+
+
+<script>
+// create canvas and assign variables
+const canvas = window.document.querySelector('#canvas');
+const ctx = canvas.getContext('2d');
+// color picker variable
+const colorPicker = window.document.querySelector('#colorpicker');
+
+// set canvas color using css variable
+//canvas.style.backgroundColor = 'red';
+canvas.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--default-canvas-color');
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
