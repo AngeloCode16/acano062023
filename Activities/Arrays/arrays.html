@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Introduction Update</title>
+</head>
+<body>
+    <h1>Car Arrays</h1>
+
+
+    <div id="displaycar">
+
+    </div>
+
+    <script>
+        let carList = ['M5', 'GTR','Chiron','Mclaren 720'];
+
+        carList.push('AMG GT')
+        carList.push('R8 GT')
+        carList.push('911 GT3 RS')
+
+        let randomNumber;
+        randomNumber= Math.floor(Math.random() * carList.length)
+
+
+
+
+        const displayCar = document.querySelector('#displaycar');
+
+
+
+        carList.forEach(function(item){console.log(" " + item + "")});
+
+    </script>
